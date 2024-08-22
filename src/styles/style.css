@@ -19,6 +19,16 @@ img {
     font-family: arista-light;
     src: url('../fonts/arista_pro/Arista-Pro-Alternate-Light-trial.ttf');
   }
+@font-face {
+    font-family: pluto-bold;
+    src: url('../fonts/pluto-font-family/HvDTrial_Pluto-CondBlack-BF6486959ed9374.otf');
+  }
+@font-face {
+    font-family: pluto-light;
+    src: url('../fonts/pluto-font-family/HvDTrial_Pluto-CondRegular-BF6486959e6db70.otf');
+  }
+
+
 
 body {
     display: flex;
@@ -55,7 +65,8 @@ header {
 }
 
 .app-name {
-    font-family: arista-bold;
+    /* font-family: arista-bold; */
+    font-family: pluto-bold;
     font-size: xx-large;
     font-weight: bold;
     padding-left: 24px;
@@ -66,11 +77,14 @@ header {
  display: flex;   
  justify-content: center;
  flex-grow: 1;
+ 
 }
 .center-nav button{
     border: 0px;
+    font-size: 20px;
     padding-left: 24px;
     padding-right: 24px;
+    font-family: pluto-light;
 }
 
 .left-nav,
@@ -86,10 +100,12 @@ header {
 } */
 
 .right-nav .sign-up {
-    border: solid pink 2px;
+    border: solid rgba(238,84,87,255) 2px;
     border-radius: 24px;
     padding-left: 24px;
     padding-right: 24px;
+    font-family: pluto-light;
+    font-size: 20px;
 }
 
 /* Landing Head */
@@ -108,8 +124,26 @@ header {
     gap: 64px;
 }
 
+.owner-rev {
+    display: flex;
+    align-items: center;
+    width: 500px;
+}
+
 .owner-rev p{
     font-size: 20px;
+    font-family: pluto-light;
+    padding: 12px;
+}
+
+.mascot-img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+
+}
+.mascot-img-container {
+    padding: 12px;
 }
 
 .head-order {
@@ -123,7 +157,8 @@ header {
     /* border: 0px; */
     /* background: transparent; */
     font-size: 20px;
-    font-family: arista-bold;
+    /* font-family: arista-bold; */
+    font-family: pluto-light;
     color: white;
 }
 
@@ -142,7 +177,7 @@ header {
     align-items: center;
     gap: 12px;
     font-size: 20px;
-    font-family: arista-bold;
+    font-family: pluto-light;
     color: black;
 }
 
@@ -178,7 +213,7 @@ header {
 
 .huge-title {
     color: rgba(238,84,87,255);
-    font-family: arista-bold;
+    font-family: pluto-bold;
     font-size: 60px;
 }
 
