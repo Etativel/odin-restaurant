@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    text-decoration: none
     /* border: solid black 1px;     */
     /* font-family: Arial, Helvetica, sans-serif; */
 }
@@ -232,7 +233,9 @@ ul {
 .content {
     display: flex;
     background-color: rgba(251,251,251,255);
-    height: 800px;
+    /* height: 800px; */
+
+    overflow: auto;
     height: fit-content;
     flex-direction: column;
 }
@@ -260,8 +263,8 @@ ul {
     border: 0px;
     background-color: white;
     transform: translateY(50%);
-    gap: 90px;
-
+    gap: 70px;
+    justify-content: space-evenly;
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); /* Shade for the top div */
 
 }
@@ -269,6 +272,8 @@ ul {
 .info-title {
     font-family: pluto-bold;
     font-size: 30px;
+    display: flex;
+    width: fit-content;
 }
 
 .info-subtitle {
@@ -276,6 +281,8 @@ ul {
     color: rgb(156, 89, 89);
     font-size: large;
     padding: 12px;
+    max-width: 300px;
+    width: fit-content;
 }
 
 .best-deliver-container {
@@ -283,22 +290,43 @@ ul {
     flex-direction: column;
     padding-top: 200px;
     padding-left: 108px;
+
 }
 
 .best-deliver-title{
+    /* font-family: pluto-bold; */
+    /* font-size: 40px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding-right: 208px; */
+    /* padding-left: 208px; */
+}
+
+.deliver-title {
+    width: 300px;
     font-family: pluto-bold;
     font-size: 40px;
+    padding-left: 24px;
+    
+}
+
+.menu-subtitle,
+.deliver-subtitle {
+    font-size: 15px;
+    font-family: pluto-light;
+    color: gray;
     width: 300px;
 }
 
-.best-deliver-title>p>span{
+.text-color-red{
     color: rgba(238,84,87,255);
 }
 
 .best-item {
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding-right: 108px;
     height: fit-content;    
 }
@@ -320,20 +348,137 @@ ul {
     align-items: center;
     gap: 8px;
     padding-top: 24px;
+
+    margin-bottom: 100px;
 }
 
 .b-item-title {
     font-family: pluto-light;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.b-item-order-link {
+    font-family: pluto-light;
+    font-size: large;
+    color: rgba(238,84,87,255);
+}
+
+/* Menu Container */
+
+.menu-container {
+    /* padding-left: 108px; */
+    padding-top: 24px;
+    /* display: flex; */
+}
+
+.menu-title {
+    padding-left: 108px;
+}
+
+.menu-subtitle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 108px;
+    padding-bottom: 24px;
+}
+
+.menu-subtitle>p{
+    width: 400px;
+}
+
+.see-all-btn {
+    border: solid rgba(238,84,87,255) 0px;
+    border-radius: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: pluto-light;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(238,84,87,255);
+}
+
+.menu-selection-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 108px;
+    padding-right: 108px;
+    width: 100%;
+    justify-content: space-evenly;
+    padding-top: 108px;
+    gap: 100px;
+    padding-bottom: 108px;
+}
+
+.menu {
+    padding: 24px;
+    border: solid rgba(254,234,223,255) 0px;
+    background-color: rgba(254,234,223,255);
+    border-radius: 12px;
+    position: relative;
 }
 
 
+.menu-img {
+    /* border: 1px solid #ddd; */
+    padding: 0;
+    width: 300px;
+    height: 150px;
 
+}
 
+.image-1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
 
+    height: 270px;
+    width: 260px;
 
+    border: solid rgba(238,84,87,255) 8px;
+    border-radius: 50%;
 
+    transform: translateY(-30%) translateX(30%);
 
+}
 
+.menu-name {
+    font-family: pluto-bold;
+    font-size: x-large;
+}
+
+.price-buy-btn-container {
+    display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-price {
+    font-family: pluto-light;
+    font-weight: 700;
+    padding-left: 8px;
+    font-size: large;
+}
+
+.menu-buy-btn {
+    border: solid rgba(238,84,87,255) 0px;
+    border-radius: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: pluto-light;
+    font-size: medium;
+    color: white;
+    background-color:  rgba(238,84,87,255);
+}
 
 
 

@@ -43,9 +43,10 @@ const appendBestItem = function(){
         bestItemTitle.classList.add(`b-item-title`)
 
         //This is the order link
-        const bestItemOrder = document.createElement("p")
+        const bestItemOrder = document.createElement("a")
         bestItemOrder.classList.add(`b-item-order-link`)
         bestItemOrder.textContent = "Order Now"
+        bestItemOrder.href = "#coming-soon"
 
         //Append the both p tag. The title and the link
         bestItemTitleContainer.appendChild(bestItemTitle)
@@ -57,4 +58,15 @@ const appendBestItem = function(){
 }
 
 appendBestItem()
+
+const menuImgs = document.querySelectorAll('.menu-img');
+
+// Loop through each element and append an image
+menuImgs.forEach(menuImg => {
+    const menuImageElem = document.createElement('img');
+    menuImageElem.src = hugeHeaderImage;
+    menuImageElem.classList.add('image-1');
+    menuImg.appendChild(menuImageElem);
+});
+
 
