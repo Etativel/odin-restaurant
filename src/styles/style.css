@@ -462,9 +462,9 @@ ul {
 
 .menu-price {
     font-family: pluto-light;
-    font-weight: 700;
+    font-weight: 500;
     padding-left: 8px;
-    font-size: large;
+    font-size: x-large;
 }
 
 .menu-buy-btn {
@@ -480,9 +480,18 @@ ul {
     background-color:  rgba(238,84,87,255);
 }
 
+.star-checked {
+    color: orange;
+  }
 
+.menu-rate {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
 
-
+.total-rev {
+    color: gray;
+}
 
 
 
