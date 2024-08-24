@@ -443,7 +443,7 @@ ul {
     width: 290px;
 
 
-    border: solid rgba(238,84,87,255) 8px;
+    border: solid rgba(238,84,87,255) 5px;
     border-radius: 50%;
 
     transform: translateY(-30%) translateX(30%);
@@ -502,7 +502,48 @@ ul {
 
 footer {
     background-color: rgba(254,234,223,255);
-    height: 40vh;
+    height: fit-content;
     display: flex;
+    padding-left: 108px;
+    padding-right: 108px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    justify-content: space-between;
+    /* font-family: pluto-light; */
 }
 
+.footer-red-font {
+    color: rgb(238,84,87,255);
+    font-family: pluto-bold;
+    font-size: 24px;;
+}
+
+.footer>div>ul>li {
+    padding: 8px;
+    color: gray;
+}
+
+.footer div{
+    padding: 8px;
+}
+
+.copyright {
+    color: gray;
+}
+
+.company-social-media {
+    margin-top: 63px;
+}
+
+.sosmed-img {
+    height: 32px;
+    width: 32px;
+    opacity: 30%;
+    margin-left: 8px;
+}
+
+.sosmed-img-container {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+}

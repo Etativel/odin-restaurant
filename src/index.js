@@ -88,7 +88,7 @@ addMenu('Lo Mein Noodles',' 223','$3.20',"./images/noodle-lomeinMenu.png")
 addMenu('Pad Thai Noodles',' 130','$4.20',"./images/pad-thai.png")
 addMenu('Pepperoni Pizza',' 112','$5.20',"./images/pizaa.png")
 addMenu('Beef Shawarma',' 140','$4.40',"./images/shawarma.png")
-addMenu('Soft Beef Tacos',' 111','$3.40',"./images/tacos.png")
+addMenu('Soft Chicken Tacos',' 111','$3.40',"./images/tacos.png")
 addMenu('Classic Cheese Burger',' 230','$4.40',"./images/burger.png")
 addMenu('Original Fried Chicken',' 211','$4.30',"./images/chicken.png")
 
@@ -185,3 +185,20 @@ const addMenuToDOM = () => {
 }
 
 addMenuToDOM()
+
+
+const sosmedImgContainer = document.querySelector('.sosmed-img-container')
+
+import igImg from './images/instagram.png'
+import twitterImg from './images/twitter.png'
+import facebookImg from './images/facebook.png'
+
+const sosmedImages = [igImg, twitterImg, facebookImg];
+
+for (let i = 0; i < sosmedImages.length; i++){
+    const img = document.createElement('img')
+    img.classList.add('sosmed-img')
+    img.src = sosmedImages[i]
+
+    sosmedImgContainer.appendChild(img)
+}
