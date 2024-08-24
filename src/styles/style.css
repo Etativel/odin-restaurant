@@ -428,9 +428,11 @@ ul {
     width: 300px;
     height: 150px;
 
+
+
 }
 
-.image-1 {
+.image {
     position: absolute;
     right: 0;
     top: 0;
@@ -438,7 +440,8 @@ ul {
     padding: 0;
 
     height: 270px;
-    width: 260px;
+    width: 290px;
+
 
     border: solid rgba(238,84,87,255) 8px;
     border-radius: 50%;
@@ -450,6 +453,7 @@ ul {
 .menu-name {
     font-family: pluto-bold;
     font-size: x-large;
+    width: 200px;
 }
 
 .price-buy-btn-container {
