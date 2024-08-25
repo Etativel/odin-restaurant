@@ -8,7 +8,7 @@ import webIcon from "./images/icon/cutlery.png"
 const iconContainer = document.querySelector('.favicon')
 iconContainer.href = webIcon
 
-
+// Header Loader
 import { headerLoad } from "./pages/header"
 const docCont = document.querySelector('.content')
 console.log(headerLoad())
