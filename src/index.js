@@ -8,23 +8,11 @@ import webIcon from "./images/icon/cutlery.png"
 const iconContainer = document.querySelector('.favicon')
 iconContainer.href = webIcon
 
-const imageContainer = document.querySelector(".image-container")
-const headImage = document.createElement("img")
-headImage.src = hugeHeaderImage
-headImage.classList.add('huge-image')
-imageContainer.appendChild(headImage)
 
-const mascotContainer = document.querySelector('.mascot-img-container')
-const mascotImage = document.createElement("img")
-mascotImage.src = headerMascotImage
-mascotImage.classList.add('mascot-img')
-mascotContainer.appendChild(mascotImage)
-
-
-// import { headerLoad } from "./pages/header"
-// const docCont = document.querySelector('.content')
-// console.log(headerLoad())
-// docCont.appendChild(headerLoad())
+import { headerLoad } from "./pages/header"
+const docCont = document.querySelector('.content')
+console.log(headerLoad())
+docCont.appendChild(headerLoad())
 
 // Best item image
 import bestNoodle from "./images/food/noodle-lomein.png"

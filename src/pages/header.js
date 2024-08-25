@@ -2,9 +2,6 @@ import hugeHeaderImage from "../images/food/burger.png"
 import headerMascotImage from "../images/icon/mascot-nobg.png"
 const headerLoad = () => {
     const headerContainer = document.createElement('header')
-    // const landing = document.createElement('div')
-    // const leftLanding = document.createElement('div')
-    // const rightLanding = document.createElement('div')
     const header = `
             <div class="landing">
                 <div class="left-landing">
@@ -41,21 +38,21 @@ const headerLoad = () => {
                         </div>
                 </div>
             </div>`
-    headerContainer.innerHTML = header
+        headerContainer.innerHTML = header
 
-    const imageContainer = headerContainer.querySelector(".image-container")
-    const headImage = document.createElement("img")
-    headImage.src = hugeHeaderImage
-    headImage.classList.add('huge-image')
-    imageContainer.appendChild(headImage)
+        const imageContainer = headerContainer.querySelector(".image-container")
+        const headImage = document.createElement("img")
+        headImage.src = hugeHeaderImage
+        headImage.classList.add('huge-image')
+        imageContainer.appendChild(headImage)
 
-    const mascotContainer = headerContainer.querySelector('.mascot-img-container')
-    const mascotImage = document.createElement("img")
-    mascotImage.src = headerMascotImage
-    mascotImage.classList.add('mascot-img')
-    mascotContainer.appendChild(mascotImage)
+        const mascotContainer = headerContainer.querySelector('.mascot-img-container')
+        const mascotImage = document.createElement("img")
+        mascotImage.src = headerMascotImage
+        mascotImage.classList.add('mascot-img')
+        mascotContainer.appendChild(mascotImage)
 
-    return headerContainer
+        return headerContainer
 }
 
 export {headerLoad}
