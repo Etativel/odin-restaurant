@@ -20,6 +20,12 @@ mascotImage.src = headerMascotImage
 mascotImage.classList.add('mascot-img')
 mascotContainer.appendChild(mascotImage)
 
+
+// import { headerLoad } from "./pages/header"
+// const docCont = document.querySelector('.content')
+// console.log(headerLoad())
+// docCont.appendChild(headerLoad())
+
 // Best item image
 import bestNoodle from "./images/food/noodle-lomein.png"
 import bestChicken from "./images/food/chicken.png"
@@ -225,4 +231,7 @@ landscape3.style.backgroundImage = `url(${land3})`
 const portrait1 = document.querySelector('.discount-2')
 portrait1.style.backgroundImage = `url(${port1})` 
 const portrait2 = document.querySelector('.discount-3')
-portrait2.style.backgroundImage = `url(${port2})` 
+portrait2.style.backgroundImage = `url(${port2})`
+
+
+
