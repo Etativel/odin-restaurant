@@ -13,14 +13,6 @@ img {
 }
 
 @font-face {
-    font-family: arista-bold;
-    src: url('../fonts/arista_pro/Arista-Pro-Alternate-Bold-trial.ttf');
-  }
-@font-face {
-    font-family: arista-light;
-    src: url('../fonts/arista_pro/Arista-Pro-Alternate-Light-trial.ttf');
-  }
-@font-face {
     font-family: pluto-bold;
     src: url('../fonts/pluto-font-family/HvDTrial_Pluto-CondBlack-BF6486959ed9374.otf');
   }
@@ -167,7 +159,7 @@ header {
 }
 
 .buy-btn {
-    border: solid rgba(238,84,87,255) 1px;
+    border: solid rgba(238,84,87,255) 2px;
     background-color: rgba(238,84,87,255);
     color: white;
     padding: 12px;
@@ -211,6 +203,8 @@ header {
 .huge-image {
     height: 500px;
     width: 600px;
+    /* height: 70vh; */
+    /* width: 45vw; */
     padding: 12px;
     margin-right: 24px;
 }
@@ -235,7 +229,7 @@ ul {
     background-color: rgba(251,251,251,255);
     /* height: 800px; */
 
-    overflow: auto;
+    /* overflow: auto; */
     height: fit-content;
     flex-direction: column;
 }
@@ -472,7 +466,7 @@ ul {
 }
 
 .menu-buy-btn {
-    border: solid rgba(238,84,87,255) 0px;
+    border: solid rgba(238,84,87,255) 2px;
     border-radius: 24px;
     padding-left: 12px;
     padding-right: 12px;
@@ -498,7 +492,53 @@ ul {
 }
 
 
+/* Discount Section */
+.discount-container {
 
+    justify-content: center;
+    gap: 12px;
+    padding: 12px;
+    display: grid;
+    /* margin-left: 100px; */
+    /* margin-right: 100px; */
+    grid-template-columns: repeat(12, 80px);
+    grid-template-rows: repeat(14, 80px);
+    margin-bottom: 100px;
+}
+
+.discount-1 {
+    grid-row: 1/5;
+    grid-column: 1/9;
+}
+
+.discount-2 {
+    grid-row: 1/5;
+    grid-column: 9/14;
+}
+
+.discount-3 {
+    grid-row: 5/9;
+    grid-column: 9/14;
+}
+
+.discount-4 {
+    grid-row: 5/9;
+    grid-column: 1/9;
+}
+
+.discount-5 {
+    grid-row: 9/17;
+    grid-column: 1/14;
+}
+
+.discount-style {
+    border-radius: 24px;
+    border: solid black 0px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+}
 
 footer {
     background-color: rgba(254,234,223,255);
@@ -546,4 +586,28 @@ footer {
     display: flex;
     justify-content: space-between;
     width: fit-content;
+}
+
+
+/* Hover styling */
+.pink-button:hover {
+    color: rgba(238,84,87,255);
+    /* background-color: rgba(255,240,233,255); */
+    background-color: white;
+    border: solid rgba(238,84,87,255) 2px;
+
+}
+
+.sign-up:hover {
+    color: white;
+    background-color: rgba(238,84,87,255);
+    border: solid rgba(238,84,87,255) 2px;
+
+}
+
+
+/* Media Queries */
+/* Mobile */
+@media (max-width: 600px) {
+    
 }

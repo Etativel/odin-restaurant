@@ -1,8 +1,8 @@
 import "./styles/style.css"
 
-import hugeHeaderImage from "./images/burger.png"
-import headerMascotImage from "./images/mascot-nobg.png"
-import webIcon from "./images/cutlery.png"
+import hugeHeaderImage from "./images/food/burger.png"
+import headerMascotImage from "./images/icon/mascot-nobg.png"
+import webIcon from "./images/icon/cutlery.png"
 
 // favicon
 const iconContainer = document.querySelector('.favicon')
@@ -21,9 +21,9 @@ mascotImage.classList.add('mascot-img')
 mascotContainer.appendChild(mascotImage)
 
 // Best item image
-import bestNoodle from "./images/noodle-lomein.png"
-import bestChicken from "./images/chicken.png"
-import bestBurger from "./images/mayoburger.png"
+import bestNoodle from "./images/food/noodle-lomein.png"
+import bestChicken from "./images/food/chicken.png"
+import bestBurger from "./images/food/mayoburger.png"
 
 const bestItemList = [bestChicken, bestBurger,bestNoodle]
 const bestItemName = ['Fried Cicken', 'Burger', 'Noodle']
@@ -82,29 +82,29 @@ const addMenu = (name, reviews, price, image) => {
     })
 }
 
-addMenu('Classic Beef Patty',' 241','$4.40',"./images/mayoburgerMenu.png")
-addMenu('Homemade Cookies',' 130','$2.20',"./images/cookies.png")
-addMenu('Lo Mein Noodles',' 223','$3.20',"./images/noodle-lomeinMenu.png")
-addMenu('Pad Thai Noodles',' 130','$4.20',"./images/pad-thai.png")
-addMenu('Pepperoni Pizza',' 112','$5.20',"./images/pizaa.png")
-addMenu('Beef Shawarma',' 140','$4.40',"./images/shawarma.png")
-addMenu('Soft Chicken Tacos',' 111','$3.40',"./images/tacos.png")
-addMenu('Classic Cheese Burger',' 230','$4.40',"./images/burger.png")
-addMenu('Original Fried Chicken',' 211','$4.30',"./images/chicken.png")
+addMenu('Classic Beef Patty',' 241','$4.40',"./images/food/mayoburgerMenu.png")
+addMenu('Homemade Cookies',' 130','$2.20',"./images/food/cookies.png")
+addMenu('Lo Mein Noodles',' 223','$3.20',"./images/food/noodle-lomeinMenu.png")
+addMenu('Pad Thai Noodles',' 130','$4.20',"./images/food/pad-thai.png")
+addMenu('Pepperoni Pizza',' 112','$5.20',"./images/food/pizaa.png")
+addMenu('Beef Shawarma',' 140','$4.40',"./images/food/shawarma.png")
+addMenu('Soft Chicken Tacos',' 111','$3.40',"./images/food/tacos.png")
+addMenu('Classic Cheese Burger',' 230','$4.40',"./images/food/burger.png")
+addMenu('Original Fried Chicken',' 211','$4.30',"./images/food/chicken.png")
 
 
 
 // need to make this dynamically
 // const imageAddresses = menuOptions.items.map(item => item['image']);
-import classicBeefPattyImg from './images/mayoburgerMenu.png';
-import homemadeCookiesImg from './images/cookies.png';
-import loMeinNoodlesImg from './images/noodle-lomeinMenu.png';
-import padThaiNoodlesImg from './images/pad-thai.png';
-import pepperoniPizzaImg from './images/pizaa.png';
-import beefShawarmaImg from './images/shawarma.png';
-import softBeefTacosImg from './images/tacos.png';
-import classicCheeseBurgerImg from './images/burger.png';
-import originalFriedChickenImg from './images/chicken.png';
+import classicBeefPattyImg from './images/food/mayoburgerMenu.png';
+import homemadeCookiesImg from './images/food/cookies.png';
+import loMeinNoodlesImg from './images/food/noodle-lomeinMenu.png';
+import padThaiNoodlesImg from './images/food/pad-thai.png';
+import pepperoniPizzaImg from './images/food/pizaa.png';
+import beefShawarmaImg from './images/food/shawarma.png';
+import softBeefTacosImg from './images/food/tacos.png';
+import classicCheeseBurgerImg from './images/food/burger.png';
+import originalFriedChickenImg from './images/food/chicken.png';
 
 const imageList = [
     classicBeefPattyImg,
@@ -165,8 +165,8 @@ const addMenuToDOM = () => {
                 price.textContent = menuOptions.items[i]['price']
 
                 const menuBuyBtn = document.createElement('div') 
-                menuBuyBtn.classList.add('menu-buy-btn')
-                menuBuyBtn.textContent = "Buy Now"
+                menuBuyBtn.classList.add('menu-buy-btn', 'pink-button')
+                menuBuyBtn.textContent = "Buy now"
         
         //append elemen
         menuImgContainer.appendChild(menuImg)
@@ -189,9 +189,9 @@ addMenuToDOM()
 
 const sosmedImgContainer = document.querySelector('.sosmed-img-container')
 
-import igImg from './images/instagram.png'
-import twitterImg from './images/twitter.png'
-import facebookImg from './images/facebook.png'
+import igImg from './images/icon/instagram.png'
+import twitterImg from './images/icon/twitter.png'
+import facebookImg from './images/icon/facebook.png'
 
 const sosmedImages = [igImg, twitterImg, facebookImg];
 
@@ -202,3 +202,27 @@ for (let i = 0; i < sosmedImages.length; i++){
 
     sosmedImgContainer.appendChild(img)
 }
+
+
+// //Discount section image
+
+import land1 from './images/discount-food/landscape-1.png'
+import land2 from './images/discount-food/landscape-2.png'
+import land3 from './images/discount-food/landscape-3.png'
+
+import port1 from './images/discount-food/portrait.png'
+import port2 from './images/discount-food/portrait-2.png'
+
+const landscape1 = document.querySelector('.discount-1')
+landscape1.style.backgroundImage = `url(${land1})` 
+
+const landscape2 = document.querySelector('.discount-4')
+landscape2.style.backgroundImage = `url(${land2})` 
+
+const landscape3 = document.querySelector('.discount-5')
+landscape3.style.backgroundImage = `url(${land3})` 
+
+const portrait1 = document.querySelector('.discount-2')
+portrait1.style.backgroundImage = `url(${port1})` 
+const portrait2 = document.querySelector('.discount-3')
+portrait2.style.backgroundImage = `url(${port2})` 
