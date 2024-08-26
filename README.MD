@@ -12,7 +12,7 @@ or
 yarn build
 ```
 
-to bundle your application
+to bundle the application
 
 Liver Preview:
 https://etativel.github.io/odin-restaurant/

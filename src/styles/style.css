@@ -629,7 +629,7 @@ button.underline {
 }
 
 .underline {
-    position: relative; /* Ensure the pseudo-element is positioned relative to the button */
+    position: relative;
 }
 
 .underline:after {
