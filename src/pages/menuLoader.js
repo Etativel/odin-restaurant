@@ -27,7 +27,7 @@ const menuLoader = () => {
 
     const menu = `
         <div class="menu-title">
-        <div class="deliver-title">
+        <div class="deliver-title" id = "dt">
             Our 
             <span class="text-color-red">
                 Regular 

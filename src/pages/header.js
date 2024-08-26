@@ -17,9 +17,11 @@ const headerLoad = () => {
                         <p>Quick Bites, Authentic Delights. Ready to Serve with a Click!</p>
                     </div>
                     <div class="head-order">
-                        <button class="buy-btn pink-button">
-                            Buy Now
-                        </button>
+                        <a href="#dt">
+                            <button class="buy-btn pink-button">
+                                Buy Now
+                            </button>
+                        </a>
                         <div class="order-btn-container">
                             <button class="order-btn">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">

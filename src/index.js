@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
 const offerBtn = document.querySelector('.offer')
 const serviceBtn = document.querySelector('.service')
 const menu = document.querySelector('.menu')
-const aboutBtn = document.querySelector('.about-us')
+// const aboutBtn = document.querySelector('.about-us')
+const homeTitle = document.querySelector('.app-name')
+const homeBtn = document.querySelector('.home')
 
 offerBtn.addEventListener('click', ()=>{
     docCont.innerHTML = ""
@@ -33,8 +35,18 @@ menu.addEventListener('click', ()=>{
     docCont.appendChild(menuLoader())
 })
 
-aboutBtn.addEventListener('click', ()=>{
-    alert("hello")
+// aboutBtn.addEventListener('click', ()=>{
+//     alert("hello")
+// })
+
+homeTitle.addEventListener('click', ()=>{
+    docCont.innerHTML = ""
+    pageLoader()
+})
+
+homeBtn.addEventListener('click', ()=>{
+    docCont.innerHTML = ""
+    pageLoader()
 })
 
 

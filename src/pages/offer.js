@@ -10,6 +10,8 @@ const discountOffer = () => {
     discountContainer.classList.add('discount-container')
 
     const discount = `
+
+
         <div class="discount-1 discount-style">
         </div>  
         <div class="discount-2 discount-style">

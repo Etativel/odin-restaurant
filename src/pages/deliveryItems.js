@@ -51,7 +51,7 @@ const deliveryItems = () => {
             const bestItemOrder = document.createElement("a")
             bestItemOrder.classList.add(`b-item-order-link`)
             bestItemOrder.textContent = "Order Now"
-            bestItemOrder.href = "#coming-soon"
+            bestItemOrder.href = "#dt"
 
             //Append the both p tag. The title and the link
             bestItemTitleContainer.appendChild(bestItemTitle)
