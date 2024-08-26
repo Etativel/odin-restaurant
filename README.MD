@@ -14,6 +14,9 @@ yarn build
 
 to bundle your application
 
+Liver Preview:
+https://etativel.github.io/odin-restaurant/
+
 Resources used:
 - https://www.freepik.com/free-vector/hand-drawn-burger-cartoon-illustration_53577010.htm#fromView=search&page=1&position=8&uuid=6c496a09-cf5c-4df0-8178-0d8c6242808c
 
