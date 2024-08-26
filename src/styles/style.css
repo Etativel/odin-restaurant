@@ -45,6 +45,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 84px;
     padding-right: 84px;
     background-color: rgba(255,240,233,255);

@@ -1,5 +1,6 @@
 import hugeHeaderImage from "../images/food/burger.png"
 import headerMascotImage from "../images/icon/mascot-nobg.png"
+
 const headerLoad = () => {
     const headerContainer = document.createElement('header')
     const header = `
