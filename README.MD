@@ -14,7 +14,7 @@ yarn build
 
 to bundle the application
 
-Liver Preview:
+Live Preview:
 https://etativel.github.io/odin-restaurant/
 
 Resources used:
